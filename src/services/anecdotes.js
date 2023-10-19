@@ -13,6 +13,11 @@ const createNew = async content => {
   return response.data;
 };
 
-const anecdoteFunctions = { getAll, createNew };
+const increaseVote = async anecdote => {
+  const response = await axios.put(`${baseUrl}/${anecdote.id}`, anecdote);
+  return response.data;
+};
+
+const anecdoteFunctions = { getAll, createNew, increaseVote };
 
 export default anecdoteFunctions;
