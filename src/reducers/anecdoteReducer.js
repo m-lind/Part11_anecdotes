@@ -34,7 +34,7 @@ const anecdoteSlice = createSlice({
   },
 });
 
-export const { appendAnecdote, setAnecdotes, updateAnecdote, addVote } =
+export const { appendAnecdote, setAnecdotes, updateAnecdote } =
   anecdoteSlice.actions;
 
 export const initializeAnecdotes = () => {
